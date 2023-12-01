@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bty_custom_style {
+  margin: 2% 0;
+  width: 30%;
+}
