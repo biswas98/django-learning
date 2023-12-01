@@ -4,6 +4,6 @@ from apps import views
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('chatBot_openAI/', views.chatBot_openAI, name='chatBot_openAI'),
+    path('chatWithOpenAI/', views.chatWithOpenAI, name='chatWithOpenAI'),
 
 ]
