@@ -7,4 +7,4 @@ def index(request):
     return render(request,"index.html")
 
 def chatWithOpenAI(request):
-    return HttpResponse("This is openAI chatbot Page")
+    return render(request,"chatWithOpenAI_index.html")

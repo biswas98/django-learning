@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat With OpenAI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/chatWithOpenaiStyles.css" />
+  </head>
+  <body>
+    <div class="container custom_container">
+      <div>
+        <!-- AI chatBox -->
+        <div
+          class="col-6 mt-2 border border-info bg-opacity-10 bg-info rounded p-2 h-auto"
+        >
+          Hi, how may I assist you...
+        </div>
+
+        <!-- Human chatBox -->
+        <div
+          class="forQuerySelection col-6 mt-2 border border-warning bg-opacity-25 bg-warning rounded p-2 h-auto"
+        >
+          Some text from user...
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control input_text"
+          placeholder="Type your query here..."
+          aria-label="Type your query here..."
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+          onclick="called()"
+        >
+          <img src="../static/assets/send.png" alt="send" width="25px" />
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/scripts/chatWithOpenAI_script.js"></script>
+  </body>
+</html>
